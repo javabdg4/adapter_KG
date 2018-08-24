@@ -13,6 +13,7 @@ public class Main {
         xml.writeData();
 
         objectAdapter();
+        classAdapter();
 
     }
 
@@ -28,7 +29,7 @@ public class Main {
         Volt v3 = getVolt(socketAdapter, 3);
         Volt v12 = getVolt(socketAdapter, 12);
         Volt v120 = getVolt(socketAdapter, 120);
-        System.out.println();
+        System.out.println(v12.getVolts());
     }
 
     public static Volt getVolt(SocketAdapter socketAdapter, int volt) {
